@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 RSpec.describe HelloRubyGems do
-  it "has a version number" do
-    expect(HelloRubyGems::VERSION).not_to be nil
+  it "greets with a default name" do
+    expect(HelloRubyGems.greet).to eq("Hello, world!")
   end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    
+  it "greets with a custom name" do
+    expect(HelloRubyGems.greet("michel")).to eq("Hello, michel!")
   end
 end
