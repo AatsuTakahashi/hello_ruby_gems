@@ -4,5 +4,8 @@ require_relative "hello_ruby_gems/version"
 
 module HelloRubyGems
   class Error < StandardError; end
-  # Your code goes here...
+  
+  def self.greet(name = "world")
+    "Hello, #{name}!"
+  end
 end
